@@ -1,1 +1,1 @@
-// Export your tings in this file
+export { getQueryString } from './get-query-string/getQueryString';

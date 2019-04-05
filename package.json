@@ -1,7 +1,7 @@
 {
-  "name": "node-package-boilerplate",
+  "name": "get-query-string",
   "version": "0.0.1",
-  "description": "A boilerplate for quickly starting a JavaScript project that will be published as an NPM package.",
+  "description": "A simple helper for getting a string from a query.",
   "main": "lib/index.js",
   "config": {
     "jest_config": "tools/jest/jest.config.js",
@@ -12,6 +12,12 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "extends": "./tools/semantic-release/release.config.js"
+  },
   "scripts": {
     "build:js": "BABEL_ENV=production babel src/ -d lib/",
     "build": "npm run clean && npm run build:js",
@@ -25,15 +31,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lodgify/node-package-boilerplate.git"
+    "url": "git+https://github.com/lodgify/get-query-string.git"
   },
   "keywords": [
-    "javascript",
-    "boilerplate",
-    "eslint",
-    "babel",
-    "semantic-release",
-    "commitizen"
+    "query"
   ],
   "author": "Lodgify",
   "license": "MIT",
