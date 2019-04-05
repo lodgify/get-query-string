@@ -1,5 +1,5 @@
 {
-  "name": "get-query-string",
+  "name": "@lodgify/get-query-string",
   "version": "0.0.1",
   "description": "A simple helper for getting a string from a query.",
   "main": "lib/index.js",
