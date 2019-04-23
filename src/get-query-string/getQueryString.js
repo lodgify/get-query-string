@@ -1,9 +1,9 @@
 /**
- * @param  {Object} [props={}]
+ * @param  {Object} [parameters={}]
  * @return {string}
  */
-export const getQueryString = props => {
-  const queryString = Object.entries(props)
+export const getQueryString = parameters => {
+  const queryString = Object.entries(parameters)
     .reduce(
       (accumulator, [key, value]) => [
         ...accumulator,
