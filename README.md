@@ -1,6 +1,6 @@
-# Get string from query
+# Get an http query string from a parameters object
 
-A simple helper to get a string from a query.
+A simple helper to get a query string from an object.
 
 ## Install
 
@@ -10,7 +10,7 @@ A simple helper to get a string from a query.
 ```js
 import { getQueryString } from '@lodgify/get-query-string';
 
-const props = {
+const parameters = {
       test: 1,
       hello: 'hello',
       dontIncludeEmptyStrings: '',
@@ -19,8 +19,12 @@ const props = {
       includeFalse: false,
     }
 
-getQueryFromString(props);
+getQueryString(parameters);
 ```
+
+## Output
+
+`?test=1&hello=hello&include0=0&includeFalse=false`
 
 ## Contributing
 
